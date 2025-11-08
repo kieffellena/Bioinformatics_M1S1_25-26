@@ -14,16 +14,17 @@ def dotplot(seq1,seq2):
                 if seq1[x]==seq2[y]:
                     matrix[x][y]=1
 
-        plt.imshow(matrix, cmap="gray_r")
+        img = plt.imshow(matrix, cmap="gray_r", origin='lower')
 
         #for the style
+        cbar = plt.colorbar(img)
+        cbar.set_label("Matching base (0 = no match, 1 = match)")
         font1 = {'family': 'serif', 'color': 'hotpink', 'size': 15}
         font2 = {'family': 'serif', 'size': 10}
         plt.title("Dotplot of two sequences",fontdict=font1)
         plt.xlabel("Sequence 1", fontdict=font2)
         plt.ylabel("Sequence 2", fontdict=font2)
-        plt.text(180, -100, "Black dots = matching bases", fontsize=10, color="black")
-
+        
         plt.show()
 
     return "it worked!"
