@@ -22,8 +22,8 @@ def dotplot(seq1,seq2):
         font1 = {'family': 'serif', 'color': 'hotpink', 'size': 15}
         font2 = {'family': 'serif', 'size': 10}
         plt.title("Dotplot of two sequences",fontdict=font1)
-        plt.xlabel("Sequence 1", fontdict=font2)
-        plt.ylabel("Sequence 2", fontdict=font2)
+        plt.xlabel("Sequence 2", fontdict=font2)
+        plt.ylabel("Sequence 1", fontdict=font2)
         
         plt.show()
 
