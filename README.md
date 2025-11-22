@@ -6,6 +6,7 @@ This repository contains small Python programs developed during my bioinformatic
 
 1. **Sequence Comparison and Dot Plot**
 2. **DNA Translation and Protein Extraction**
+3. **Tutorial Pairwise Sequence Alignment**
 
 ## 1. Sequence Comparison and Dot Plot
 
@@ -24,7 +25,7 @@ This script reads a DNA sequence, generates its complementary strand, computes a
 It then identifies all possible protein sequences and outputs the longest protein found across all reading frames.
 This script intentionally does not restrict translation to sequences starting with a start codon. This approach is useful, allowing analysis of potentially incomplete or unannotated regions.
 
-##3. Tutorial Pairwise Sequence Alignment
+## 3. Tutorial Pairwise Sequence Alignment
 **Aim:** 
 Assess the significance of alignment. 
 
